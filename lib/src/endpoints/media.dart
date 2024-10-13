@@ -1,10 +1,10 @@
 part of '../main.dart';
 
-class _Media {
+class MediaEndpoint {
   static const String _name = 'media';
   final WordPressAPI _api;
 
-  _Media(this._api);
+  MediaEndpoint(this._api);
 
   /// [GET] media from WP media endpoint
   ///

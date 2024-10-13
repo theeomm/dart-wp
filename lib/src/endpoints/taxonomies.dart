@@ -1,10 +1,10 @@
 part of '../main.dart';
 
-class _Taxonomies {
+class TaxonomiesEndpoint {
   static const String _name = 'taxonomies';
   final WordPressAPI _api;
 
-  _Taxonomies(this._api);
+  TaxonomiesEndpoint(this._api);
 
   /// [GET] taxonomies from WP taxonomies endpoint
   ///

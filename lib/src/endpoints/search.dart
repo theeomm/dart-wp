@@ -1,10 +1,10 @@
 part of '../main.dart';
 
-class _Search {
+class SearchEndpoint {
   static const String _name = 'search';
   final WordPressAPI _api;
 
-  _Search(this._api);
+  SearchEndpoint(this._api);
 
   /// [GET] search results from WP search endpoint
   ///

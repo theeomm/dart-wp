@@ -1,10 +1,10 @@
 part of '../main.dart';
 
-class _Tags {
+class TagsEndpoint {
   static const String _name = 'tags';
   final WordPressAPI _api;
 
-  _Tags(this._api);
+  TagsEndpoint(this._api);
 
   /// [GET] tags from WP tags endpoint
   ///

@@ -1,10 +1,10 @@
 part of '../main.dart';
 
-class _Categories {
+class CategoriesEndpoint {
   static const String _name = 'categories';
   final WordPressAPI _api;
 
-  _Categories(this._api);
+  CategoriesEndpoint(this._api);
 
   /// [GET] categories from WP categories endpoint
   ///

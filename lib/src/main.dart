@@ -110,35 +110,23 @@ class WordPressAPI {
   }
 
 // WP Standard Endpoints
-
-  //ignore: library_private_types_in_public_api, non_constant_identifier_names
-  _ApplicationPasswords get application_passwords =>
-      _ApplicationPasswords(this);
-  //ignore: library_private_types_in_public_api
-  _Posts get posts => _Posts(this);
-  //ignore: library_private_types_in_public_api
-  _Pages get pages => _Pages(this);
-  //ignore: library_private_types_in_public_api
-  _Media get media => _Media(this);
-  //ignore: library_private_types_in_public_api
-  _Categories get categories => _Categories(this);
-  //ignore: library_private_types_in_public_api
-  _Comments get comments => _Comments(this);
-  //ignore: library_private_types_in_public_api
-  _Users get users => _Users(this);
-  //ignore: library_private_types_in_public_api
-  _Search get search => _Search(this);
-  //ignore: library_private_types_in_public_api
-  _Taxonomies get taxonomies => _Taxonomies(this);
-  //ignore: library_private_types_in_public_api
-  _Tags get tags => _Tags(this);
+  ApplicationPasswordsEndpoint get applicationPasswords =>
+      ApplicationPasswordsEndpoint(this);
+  PostsEndpoint get posts => PostsEndpoint(this);
+  PagesEndpoint get pages => PagesEndpoint(this);
+  MediaEndpoint get media => MediaEndpoint(this);
+  CategoriesEndpoint get categories => CategoriesEndpoint(this);
+  CommentsEndpoint get comments => CommentsEndpoint(this);
+  UsersEndpoint get users => UsersEndpoint(this);
+  SearchEndpoint get search => SearchEndpoint(this);
+  TaxonomiesEndpoint get taxonomies => TaxonomiesEndpoint(this);
+  TagsEndpoint get tags => TagsEndpoint(this);
 
 // WP Plugins Endpoints
   /// Job Listings endpoints provided by `[WP Job Manager]` plugin
   ///
   /// `/wp/v2/job-listings`
-  //ignore: library_private_types_in_public_api
-  _JobListings get jobs => _JobListings(this);
+  JobListingsEndpoint get jobs => JobListingsEndpoint(this);
 }
 
 /// Wordpress `REST API Discovery` from Link Header

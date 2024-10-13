@@ -1,10 +1,10 @@
 part of '../main.dart';
 
-class _ApplicationPasswords {
+class ApplicationPasswordsEndpoint {
   static const String _name = 'application-passwords';
   final WordPressAPI _api;
 
-  _ApplicationPasswords(this._api);
+  ApplicationPasswordsEndpoint(this._api);
 
   /// [id] is the user id
   Future<WPResponse> fetch(int id, {int? appId}) async {

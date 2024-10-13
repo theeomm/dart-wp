@@ -1,10 +1,10 @@
 part of '../main.dart';
 
-class _Users {
+class UsersEndpoint {
   static const String _name = 'users';
   final WordPressAPI _api;
 
-  _Users(this._api);
+  UsersEndpoint(this._api);
 
   /// [GET] users from WP users endpoint
   ///

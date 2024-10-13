@@ -1,10 +1,10 @@
 part of '../main.dart';
 
-class _Comments {
+class CommentsEndpoint {
   static const String _name = 'comments';
   final WordPressAPI _api;
 
-  _Comments(this._api);
+  CommentsEndpoint(this._api);
 
   /// [GET] comments from WP comments endpoint
   ///

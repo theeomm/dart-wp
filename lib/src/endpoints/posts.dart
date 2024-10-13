@@ -1,10 +1,10 @@
 part of '../main.dart';
 
-class _Posts {
+class PostsEndpoint {
   static const String _name = 'posts';
   final WordPressAPI _api;
 
-  _Posts(this._api);
+  PostsEndpoint(this._api);
 
   /// `[GET]` posts from WP posts endpoint
   ///

@@ -1,10 +1,10 @@
 part of '../main.dart';
 
-class _JobListings {
+class JobListingsEndpoint {
   static const String _name = 'job-listings';
   final WordPressAPI _api;
 
-  _JobListings(this._api);
+  JobListingsEndpoint(this._api);
 
   /// [GET] job listings from `WP Job Manager` endpoint
   ///
